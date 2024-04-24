@@ -1,0 +1,160 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+
+.box {
+    width: 1000px;
+    height: 650px;
+}
+
+.left_box {
+    width: 200px;
+    height: 100%;
+    float: left;
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+    background-color: green;
+}
+
+.menu {
+    width: 200px;
+    height: 550px;
+    background-color: orange;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+}
+
+.navi{
+    margin-left: 12.5px;
+    margin-top: 10px;
+}
+
+.navi>li{
+    float: left;
+    width: 180px;
+    
+}
+
+.navi>li>a{
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+    
+}
+
+.navi>li>a:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+.submenu{
+    float: left;
+    width: 180px;
+    height: 160px;
+    left: 180px;
+    top: -20px;
+    position: absolute;
+    background-color: #999;
+    display: none;
+    z-index: 1;
+}
+
+.submenu > li > a{
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #999;
+    color: #333;
+}
+
+.submenu > li > a:hover{
+    background-color: #ccc;
+    color: #ff0;
+}
+
+
+.right_box {
+    width: 800px;
+    height: 100%;
+    float: left;
+}
+
+.slide {
+    width: 800px;
+    height: 350px;
+    background-color: yellow;
+}
+
+.contents {
+    width: 800px;
+    height: 200px;
+}
+
+.notice_box {
+    width: 280px;
+    height: 100%;
+    background-color: #999;
+    float: left;
+}
+
+.banner_box {
+    width: 280px;
+    height: 100%;
+    background-color: #555;
+    float: left;
+}
+
+.icon_box {
+    width: 240px;
+    height: 100%;
+    background-color: #333;
+    float: left;
+}
+
+.footer {
+    width: 800px;
+    height: 100px;
+}
+
+.down_logo {
+    width: 200px;
+    height: 100%;
+    background-color: olive;
+    float: left;
+}
+
+.copyright {
+    width: 600px;
+    height: 100%;
+    float: left;
+}
+
+.down_menu {
+    width: 100%;
+    height: 50px;
+    background-color: skyblue;
+}
+
+.copy {
+    width: 100%;
+    height: 50px;
+    background-color: pink;
+}
