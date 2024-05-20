@@ -1,0 +1,3 @@
+$(".navi>li").mouseover(function(){
+    
+})
