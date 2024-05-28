@@ -46,7 +46,7 @@ header{
 .navi{
     float: right;
     margin-right: 10px;
-    margin-left: 10px;
+    margin-top: 30px;
 }
 
 .navi>li{
@@ -94,13 +94,125 @@ header{
     width: 100%;
     height: 300px;
     position: relative;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.slidelist{
+    float: left;
+    /* width: 3600px; */
+    height: 900px;
+}
+
+.slidelist ul li{
+    height: 300px;
+    float: left;
+}
+
+.slidelist span{
+    width: 500px;
+    height: 50px;
+    text-align: center;
+    position: absolute;
+    color: #fff;
+    background-color: rgba(40,40,40,0.5);
+    line-height: 50px;
+    margin-left: 350px;
+    margin-top: 125px;
 }
 
 .contents{
     width: 100%;
     height: 200px;
-    /* position: absolute; */
+    position: relative;
 }
+
+.tabmenu{
+    width: 395px;
+    height: 100%;
+    position: absolute;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tabmenu>li{
+    float: left;
+    width: 100px;
+    line-height: 30px;
+}
+
+.tabmenu>li>a{
+    display: block;
+    text-align: center;
+    border: 1px solid black;
+    background-color: #ccc;
+    border-bottom: none ;
+}
+
+.tabmenu>li:first-child>a{
+    border-right: none;
+}
+
+.tabmenu>li.active>a{
+    background-color: #fff;
+}
+
+.tabmenu>li div{
+    position: absolute;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.tabmenu>li.active div{
+    width: 393px;
+    height: 148px;
+    border: 1px solid black;
+    z-index: 1;
+}
+
+.notice ul{
+    float: left;
+    width: 393px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.notice li{
+    height: 32px;
+    line-height: 32px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.notice li:nth-child(2n){
+    background-color: #ccc;
+}
+
+.notice li span{
+    float: right;
+}
+
+.notice li:hover{
+    font-weight: bold;
+}
+
+.gallery li{
+    float: left;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+.gallery img{
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+}
+
+.gallery li:hover{
+    opacity: 0.5;
+}
+
 
 footer{
     width: 100%;
