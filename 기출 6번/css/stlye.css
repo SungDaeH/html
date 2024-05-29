@@ -95,16 +95,29 @@ header{
     height: 300px;
     position: relative;
     overflow: hidden;
-    object-fit: cover;
 }
 
 .slidelist{
     width: 3600px;
 }
 
+.slidelist span{
+    position: absolute;
+    width: 500px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 26px;
+    color: #fff;
+    margin-top: 125px;
+    margin-left: 350px;
+    background-color: rgba(40, 40, 40, 0.5);
+}
+
 .slidelist li{
     float: left;
     width: 1200px;
+    height: 300px;
 }
 
 .contents{
@@ -120,6 +133,121 @@ header{
     float: left;
     /* z-index: 1; */
 }
+
+.tabmenu>li{
+    float: left;
+    width: 100px;
+}
+
+.tabmenu>li>a{
+    text-align: center;
+    border: 1px solid black;
+    background-color: #fff;
+}
+
+.tabmenu>li:first-child>a{
+    background-color: #ddd;
+}
+
+.tabmenu>li div{
+    position: absolute;
+    left: 0px;
+    height: 0px;
+    overflow: hidden;
+}
+
+.tabmenu>li.active>a{
+    background-color: purple;
+    color: #fff;
+}
+
+.tabmenu>li.active div{
+    width: 380px;
+    height: 150px;
+}
+
+.notice li{
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 32px;
+    width: 360px;
+}
+
+.notice span{
+    float: right;
+}
+
+.notice li:nth-child(2n){
+    background-color: #ddd;
+}
+
+.gallery li{
+    margin-left: 5px;
+    float: left;
+    margin-top: 10px;
+}
+
+
+.gallery img{
+    width: 100px;
+    padding: 10px;
+}
+
+#modal{
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 1;
+}
+
+#modal.active{
+    display: block;
+}
+
+.modal_up{
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    left: 470px;
+    top: 150px;
+    border: 1px solid black;
+}
+
+.uptitle{
+    line-height: 16px;
+    font-size: 26px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.upbody{
+    line-height: 32px;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.btn{
+    width: 50px;
+    height: 40px;
+    background-color: #000;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    color: white;
+    bottom: 10px;
+    right: 10px;
+    position: absolute;
+    cursor: pointer;
+}
+
+
 
 .banner{
     width: 395px;
