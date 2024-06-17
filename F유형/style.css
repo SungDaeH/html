@@ -1,0 +1,360 @@
+@charset "utf-8";
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+
+body {
+    width: 100%;
+}
+
+header {
+    width: 1340px;
+    height: 70px;
+}
+
+.wrap {
+    width: 1200px;
+}
+
+.logo {
+    float: left;
+    width: 200px;
+    height: 40px;
+    background: rgb(255, 0, 128);
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+    color: white;
+}
+
+.menu {
+    float: right;
+    width: 800px;
+    height: 70px;
+}
+
+.menu_f {
+    position: absolute;
+    left: 0px;
+    top: 70px;
+    width: 100%;
+    height: 160px;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 1;
+    float: left;
+    display: none;
+}
+
+.main {
+    width: 600px;
+    margin-top: 30px;
+    margin-right: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.main li {
+    float: left;
+    width: 150px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.main>li>a {
+    background: rgb(255, 0, 128);
+    color: white;
+}
+
+.main li>a:hover {
+    background: white;
+    color: black;
+}
+
+.sub {
+    width: 100%;
+    height: 160px;
+    color: black;
+    display: none;
+}
+
+.imgslide {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slidelist img {
+    width: 2000px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.slidelist li {
+    float: left;
+    width: 2000px;
+    height: 350px;
+}
+
+.slidelist {
+    width: 6000px;
+}
+
+.slidelist span {
+    position: absolute;
+    background: rgba(0, 153, 255, 0.8);
+    color: white;
+    width: 400px;
+    text-align: center;
+    line-height: 50px;
+    margin-left: 800px;
+    margin-top: 150px;
+    font-weight: bold;
+}
+
+.all {
+    width: 1200px;
+    height: 500px;
+    position: relative;
+    bottom: 100px;
+}
+
+.imgbanner {
+    width: 1200px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.imgbanner li {
+    text-align: center;
+    line-height: 80px;
+    font-size: 30px;
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+    margin-left: 130px;
+    background: rgb(255, 0, 128);
+}
+
+.imgbanner li:hover {
+    opacity: 0.5;
+}
+
+.imgtext {
+    width: 1200px;
+    height: 150px;
+    background: rgb(0, 153, 255);
+}
+
+.imgtext img {
+    width: 400px;
+    height: 130px;
+    object-fit: cover;
+}
+
+.imgtext a {
+    float: left;
+    width: 400px;
+    height: 130px;
+    margin: 10px;
+}
+
+.text_body {
+    float: left;
+    height: 130px;
+    margin: 10px;
+    color: white;
+}
+
+.contents {
+    width: 1200px;
+    height: 250px;
+}
+
+.tabmenu {
+    float: left;
+    width: 400px;
+    height: 180px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: absolute;
+}
+
+.tabmenu>li {
+    float: left;
+    width: 100px;
+    line-height: 30px;
+}
+
+.tabmenu>li>a {
+    text-align: center;
+    color: black;
+    background: gainsboro;
+}
+
+.tabmenu>li.active>a {
+    background: rgba(0, 0, 255, 0.5);
+    color: white;
+    font-weight: bold;
+}
+
+.tabmenu>li>a:hover {
+    font-weight: bold;
+}
+
+.tabmenu>li div {
+    position: absolute;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.tabmenu>li.active div {
+    width: 380px;
+    height: 140px;
+    border: 1px solid #ddd;
+}
+
+.notice {
+    width: 380px;
+    line-height: 32px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.notice li {
+    padding-left: 10px;
+}
+
+.notice li:nth-child(2n) {
+    background: rgba(0, 115, 255, 0.5);
+}
+
+.notice span {
+    float: right;
+    padding-right: 10px;
+}
+
+.notice li:hover {
+    font-weight: bold;
+}
+
+.gallery a {
+    width: 100px;
+    height: 100px;
+    background: aqua;
+    padding: 10px;
+}
+
+.gallery li {
+    float: left;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.gallery li:hover {
+    opacity: 0.5;
+}
+
+footer {
+    width: 1200px;
+    height: 100px;
+    background: gainsboro;
+}
+
+#modal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #00000055;
+    left: 0;
+    display: none;
+    top: 0;
+}
+
+#modal.active {
+    display: block;
+}
+
+.uptitle {
+    /* width: 100%; */
+    margin-left: -400px;
+    /* border-bottom: 1px solid black; */
+}
+
+.upbody {
+    line-height: 32px;
+    font-size: 20px;
+    border-top: 1px solid black;
+}
+
+.upbody p {
+    text-decoration: underline;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.modal_up {
+    width: 500px;
+    height: 500px;
+    position: fixed;
+    background-color: #ffffff;
+    margin-left: 650px;
+    margin-top: 250px;
+    text-align: center;
+}
+
+.f1 {
+    float: left;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 24px;
+}
+
+.f2 {
+    float: left;
+    width: 1000px;
+    height: 100px;
+    background-color: aqua;
+}
+
+.f3 {
+    width: 100%;
+    height: 50px;
+}
+
+.f3 li {
+    float: left;
+    margin-top: 5px;
+}
+
+.f3 a {
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    text-decoration: underline;
+}
+
+.f4 {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    /* line-height: 0px; */
+    margin-left: 10px;
+    margin-right: 10px;
+}
