@@ -88,38 +88,41 @@ header {
 }
 
 .imgslide {
-    width: 100%;
+    width: 2000px;
     height: 350px;
+    background-color: #33333355;
     overflow: hidden;
     position: relative;
 }
 
-.slidelist img {
+.imgslide img {
     width: 2000px;
     height: 350px;
     object-fit: cover;
-}
-
-.slidelist li {
-    float: left;
-    width: 2000px;
-    height: 350px;
+    /* left: 0; */
 }
 
 .slidelist {
     width: 6000px;
 }
 
+.slidelist li {
+    float: left;
+    width: 2000px;
+    /* position: relative; */
+    height: 350px;
+}
+
 .slidelist span {
     position: absolute;
-    background: rgba(0, 153, 255, 0.8);
-    color: white;
     width: 400px;
+    height: 50px;
+    background-color: rgba(40, 40, 40, 0.5);
     text-align: center;
     line-height: 50px;
-    margin-left: 800px;
-    margin-top: 150px;
-    font-weight: bold;
+    margin-top: 125px;
+    margin-left: 750px;
+    color: white;
 }
 
 .all {

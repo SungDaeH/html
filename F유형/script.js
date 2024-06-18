@@ -8,13 +8,13 @@ $('.main>li').mouseout(function () {
 });
 
 setInterval(function () {
-    $('.slidelist').delay(2000);
-    $('.slidelist').animate({ marginLeft: -2000 });
-    $('.slidelist').delay(2000);
-    $('.slidelist').animate({ marginLeft: -4000 });
-    $('.slidelist').delay(2000);
-    $('.slidelist').animate({ marginLeft: 0 });
-});
+    $(".slidelist").delay(2000);
+    $(".slidelist").animate({ marginLeft: -2000 });
+    $(".slidelist").delay(2000);
+    $(".slidelist").animate({ marginLeft: -4000 });
+    $(".slidelist").delay(2000);
+    $(".slidelist").animate({ marginLeft: 0 });
+})
 
 $('.tabmenu>li>a').click(function () {
     $(this).parent().addClass('active')
