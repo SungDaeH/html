@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <script src="./script/jquery-1.12.3.js"></script>
     <script src="./script/script.js" defer></script>
 </head>
+
 <body>
     <header>
         <div class="logo">LOGO</div>
@@ -49,7 +51,7 @@
         </div>
     </header>
 
-    <div class="bodywrap">    
+    <div class="bodywrap">
         <div class="banner">
             <li>
                 <a href="#">
@@ -62,27 +64,30 @@
             </li>
         </div>
         <div class="contents">
-            <div class="notice"><p>공지사항</p>
-                <ul>
-                    <li><a href="#">공지사항<span>2024-06-24</span></a></li>
-                    <li><a href="#">공지사항<span>2024-06-24</span></a></li>
-                    <li><a href="#">공지사항<span>2024-06-24</span></a></li>
-                    <li><a href="#">공지사항<span>2024-06-24</span></a></li>
-                </ul>
-            </div>
-            <div class="gallery"><p>갤러리</p>
-                <ul>
-                    <li><a href="#"><img src="./img/gallery01.jpg" alt="">사진1</a></li>
-                    <li><a href="#"><img src="./img/gallery02.jpg" alt="">사진2</a></li>
-                </ul>
-            </div>
+            <ul class="tabmenu">
+                <li class="active"><a href="#">갤러리</a>
+                    <ul>
+                        <li><a href="#">공지사항<span>2024.06.24</span></a></li>
+                        <li><a href="#">공지사항<span>2024.06.24</span></a></li>
+                        <li><a href="#">공지사항<span>2024.06.24</span></a></li>
+                        <li><a href="#">공지사항<span>2024.06.24</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="#">갤러리</a>
+                    <ul>
+                        <li><a href="#"><img src="./img/gallery01.jpg" alt="갤러리1">갤러리1</a></li>
+                        <li><a href="#"><img src="./img/gallery02.jpg" alt="갤러리2">갤러리2</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
         <div class="icon"></div>
-</div>
+    </div>
 
 
     <div class="imgslide"></div>
 
     <footer></footer>
 </body>
+
 </html>
