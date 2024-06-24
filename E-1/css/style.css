@@ -1,29 +1,30 @@
 @charset "utf-8";
 
-*{
+* {
     margin: 0 auto;
     padding: 0;
     list-style: none;
     color: #333;
 }
 
-a{
+a {
     display: block;
     text-decoration: none;
 }
 
-html, body{
+html,
+body {
     width: 100%;
     height: 100%;
 }
 
-header{
+header {
     width: 200px;
     height: calc(100% - 120px);
     float: left;
 }
 
-.logo{
+.logo {
     background-color: #33333333;
     width: 200px;
     height: 100px;
@@ -32,7 +33,7 @@ header{
     font-size: 30px;
 }
 
-.menu{
+.menu {
     width: 200px;
     height: calc(100% - 110px);
     /* background-color: #33333355; */
@@ -40,59 +41,59 @@ header{
     z-index: 1;
 }
 
-.nav>li{
+.nav>li {
     position: relative;
 }
 
-.nav>li>a{
+.nav>li>a {
     padding: 10px;
     background-color: #4b310a;
     color: white;
 }
 
-.nav>li>a:hover{
+.nav>li>a:hover {
     background-color: black;
     color: white;
 }
 
-.sub{
+.sub {
     position: absolute;
     /* padding: 10px; */
     left: 200px;
     top: 0;
     width: 180px;
     height: 160px;
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0, 0, 0, .5);
     display: none;
     z-index: 1;
 }
 
-.sub li a{
+.sub li a {
     /* width: 180px; */
     color: white;
     text-align: center;
     line-height: 40px;
 }
 
-.sub li a:hover{
+.sub li a:hover {
     background-color: white;
     color: black;
 }
 
 
-.sub li a{
-    background-color: rgba(0,0,0,0.5);
+.sub li a {
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     /* padding: 0 10px; */
 }
 
-.bodywrap{
+.bodywrap {
     width: 400px;
     height: calc(100% - 120px);
     float: left;
 }
 
-.banner{
+.banner {
     width: 400px;
     height: 150px;
     background-color: #33333377;
@@ -100,25 +101,25 @@ header{
     position: relative;
 }
 
-.banner a img{
+.banner a img {
     width: 400px;
     height: 150px;
     object-fit: cover;
 }
 
-.banner li a .text h4{
+.banner li a .text h4 {
     width: 200px;
     height: 30px;
     line-height: 30px;
     text-align: center;
     position: absolute;
     top: 40px;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     left: 100px;
 }
 
-.banner li a .text p{
+.banner li a .text p {
     position: absolute;
     width: 150px;
     height: 50px;
@@ -130,7 +131,7 @@ header{
     border-radius: 50px;
 }
 
-.contents{
+.contents {
     width: 400px;
     height: calc(100% - 150px - 120px);
     background-color: #33333399;
@@ -138,68 +139,161 @@ header{
     /* float: left; */
 }
 
-.notice{
+.tabmenu {
     width: 400px;
-    height: 190px;
-    /* background-color: white; */
-    padding-top: 10px;
-    /* padding-right: 10px; */
+    height: 100%;
+    position: relative;
 }
 
-.notice p{
-    width: 130px;
-    line-height: 40px;
+.tabmenu>li {
+    /* float: left; */
+    width: 100px;
+    /* line-height: 30px; */
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.tabmenu>li>a {
+    border: 1px solid black;
+    border-bottom: none;
     text-align: center;
-    float: left;
-    /* padding-top: 10px; */
+    background-color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.tabmenu>li div {
+    width: 370px;
+    height: 160px;
+    border-top: 1px solid black;
+    /* background-color: white; */
+    /* margin-top: 10px; */
+}
+
+.tabmenu>li>a {
+    position: relative;
+    top: 1px;
     background-color: white;
 }
 
-.notice li a {
-    width: 400px;
-    height: 30px;
-    line-height: 40px;
-    float: left;
-    background-color: white;
-    padding: 10px;
+
+.notice ul {
+    margin-top: 10px;
 }
 
-.notice li:nth-child(1) a{
-    background-color: #99999999;
-    /* color: white; */
+.notice li {
+    line-height: 35px;
+    border-bottom: 1px solid black;
 }
 
-.notice li:nth-child(3) a{
-    background-color: #99999999;
-    /* color: white; */
-}
-
-
-.notice span{
+.notice span {
     float: right;
-    padding-right: 20px;
 }
 
-.gallery{
-    width: 400px;
+.tabmenu>.a {
     height: 100px;
-    background-color: white;
-    padding-top: 50px;
 }
 
-.icon{
+.gallery ul {
+    width: 100%;
+    height: 100%;
+    /* margin-top: 10px; */
+    /* margin-left: 5px; */
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    /* margin-left: 10px; */
+    /* margin-right: 45px; */
+}
+
+.gallery li {
+    text-align: center;
+    width: 100%;
+    height: 90%;
+    /* background-color: white; */
+    float: left;
+    padding: 10px;
+    /* margin-top: 30px; */
+    /* margin-right: 15px; */
+
+}
+
+.gallery li a {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    /* float: left; */
+}
+
+.icon {
     height: 120px;
     background-color: #66666633;
 }
 
-.imgslide{
+.icon li {
+    float: left;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.icon img {
+    width: 70px;
+    height: 70px;
+}
+
+.icon p {
+    text-align: center;
+}
+
+.imgslide {
     width: calc(100% - 200px - 400px);
     height: calc(100% - 120px);
     background-color: #66666666;
     float: right;
+    position: relative;
 }
 
-footer{
+.slidelist img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slidelist {
+    height: 100%;
+    width: 100%;
+    float: left;
+    overflow: hidden;
+}
+
+.slidelist ul {
+    height: 100%;
+}
+
+.slidelist ul li {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.slidelist span {
+    position: absolute;
+    width: 400px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: rgba(40, 40, 40, 0.5);
+    color: white;
+    margin-left: 50vh;
+    margin-top: 400px;
+}
+
+footer {
     width: 100%;
     height: 120px;
     background-color: #66666699;
