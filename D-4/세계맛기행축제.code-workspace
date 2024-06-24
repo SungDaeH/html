@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../세계맛기행축제"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "세계맛기행축제"
+	}
+}
