@@ -16,6 +16,7 @@ html,
 body {
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 header {
@@ -259,25 +260,23 @@ header {
 }
 
 .slidelist img {
-    width: 100%;
+    width: 200vh;
     height: 100%;
     object-fit: cover;
+
 }
 
 .slidelist {
-    height: 100%;
-    width: 100%;
-    float: left;
+    width: 600vh;
+    height: 100vh;
     overflow: hidden;
 }
 
-.slidelist ul {
-    height: 100%;
+.slidelist a {
+    height: 87.5vh;
 }
 
-.slidelist ul li {
-    width: 100%;
-    height: 100%;
+.slidelist li {
     float: left;
 }
 
@@ -290,7 +289,7 @@ header {
     background-color: rgba(40, 40, 40, 0.5);
     color: white;
     margin-left: 50vh;
-    margin-top: 400px;
+    margin-top: 100px;
 }
 
 footer {
@@ -298,4 +297,55 @@ footer {
     height: 120px;
     background-color: #66666699;
     float: left;
+}
+
+.bt_logo{
+    float: left;
+    width: 200px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.bt_sub{
+    float: left;
+    width: calc(100% - (200px + 300px));
+    height: 120px;
+}
+
+.bt_menu{
+    width: 100%;
+    height: 50%;
+    z-index: 1;
+    position: relative;
+}
+
+.bt_menu li{
+    float: left;
+    margin-left: 20px;
+    padding: 5px 5px;
+    margin-top: 5px;
+}
+
+.copy{
+    width: 100%;
+    height: 50%;
+}
+
+.copy p{
+    float: left;
+    margin-left: 20px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.family{
+    float: left;
+    width: 300px;
+    height: 100%;
+    line-height: 100px;
+    text-align: center;
+    /* background-color: rgba(216, 191, 216, 0.603); */
+    position: relative;
 }
